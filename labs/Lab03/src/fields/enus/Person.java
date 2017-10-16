@@ -42,29 +42,30 @@ public class Person implements PersonInterface {
 	public String getEmail() {
 		return email;
 	}
-	
-	public static class PersonBuilder implements PersonBuilderInterface  {
-		
+
+	public static class PersonBuilder implements PersonBuilderInterface {
+
 		private String firstName;
 		private String lastName;
 		private String title;
 		private String cellphone;
 		private String email;
-		
+
 		public PersonBuilder(String firstName, String lastName) {
 			this.firstName = firstName;
 			this.lastName = lastName;
 		}
-		
+
 		public PersonBuilder title(String title) {
 			this.title = title;
 			return this;
 		}
-		
+
 		public PersonBuilder cellphone(String cellphone) {
 			this.cellphone = cellphone;
 			return this;
 		}
+
 		public PersonBuilder email(String email) {
 			this.email = email;
 			return this;
@@ -89,11 +90,11 @@ public class Person implements PersonInterface {
 		public String getEmail() {
 			return email;
 		}
-		
+
 		public Person build() {
 			return new Person(this);
 		}
-		
+
 	}
 
 }

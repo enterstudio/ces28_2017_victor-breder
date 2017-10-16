@@ -25,12 +25,32 @@ abstract public class AbstractLetter {
 		return header() + body() + conclusion() + signature();
 	}
 
-	public abstract String header();
+	protected abstract String header();
 
-	public abstract String body();
+	protected abstract String body();
 
-	public abstract String conclusion();
+	protected abstract String conclusion();
 
-	public abstract String signature();
+	protected abstract String signature();
+
+	public void setSender(PersonInterface sender) {
+		this.sender = sender;
+	}
+
+	public void setDestinatary(PersonInterface destinatary) {
+		this.destinatary = destinatary;
+	}
+
+	public void setAddressSender(AddressInterface addressSender) {
+		this.addressSender = addressSender;
+	}
+
+	public void setAddressDestinatary(AddressInterface addressDestinatary) {
+		this.addressDestinatary = addressDestinatary;
+	}
+
+	public void setDate(DateInterface date) {
+		this.date = date;
+	}
 
 }
