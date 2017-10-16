@@ -6,8 +6,8 @@ import fields.PersonInterface;
 
 public class PersonalLetterENUS extends AbstractLetter {
 
-	public PersonalLetterENUS(PersonInterface sender, PersonInterface destinatary, AddressInterface addressSender, AddressInterface addressDestinatary,
-			DateInterface date) {
+	public PersonalLetterENUS(PersonInterface sender, PersonInterface destinatary, AddressInterface addressSender,
+			AddressInterface addressDestinatary, DateInterface date) {
 		super(sender, destinatary, addressSender, addressDestinatary, date);
 	}
 

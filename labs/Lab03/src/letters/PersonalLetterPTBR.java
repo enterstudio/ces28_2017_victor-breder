@@ -5,8 +5,8 @@ import fields.DateInterface;
 import fields.PersonInterface;
 
 public class PersonalLetterPTBR extends AbstractLetter {
-	public PersonalLetterPTBR(PersonInterface sender, PersonInterface destinatary, AddressInterface addressSender, AddressInterface addressDestinatary,
-			DateInterface date) {
+	public PersonalLetterPTBR(PersonInterface sender, PersonInterface destinatary, AddressInterface addressSender,
+			AddressInterface addressDestinatary, DateInterface date) {
 		super(sender, destinatary, addressSender, addressDestinatary, date);
 	}
 

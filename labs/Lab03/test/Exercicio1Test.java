@@ -15,7 +15,7 @@ import letters.CommercialLetterENUS;
 import letters.PersonalLetterENUS;
 
 public class Exercicio1Test {
-	
+
 	private PersonInterface laurival;
 	private PersonInterface ivan;
 	private AddressInterface laurivalAddress;
@@ -23,14 +23,12 @@ public class Exercicio1Test {
 	private DateInterface date;
 
 	@Before
-	public void setup() {		
+	public void setup() {
 		laurival = new PersonBuilder("Laurival", "Neto").cellphone("12 91234-5678").email("lauriv@l.com").build();
 		ivan = new PersonBuilder("Ivan", "Padalko").title("Mr.").cellphone("12 91234-5678").email("iv@n.com").build();
 		laurivalAddress = new Address("Rua H8B", "Estrela", "SP", "Brazil", "12224-468");
 		ivanAddress = new Address("Rua H8A", "Lua", "SP", "Brazil", "12224-469");
 		date = new Date(2017, 12, 31);
-		
-
 	}
 
 	@Test

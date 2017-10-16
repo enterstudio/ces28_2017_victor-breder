@@ -1,7 +1,7 @@
 package fields;
 
 public interface PersonInterface {
-	
+
 	public String toString();
 
 	public String getFirstName();
